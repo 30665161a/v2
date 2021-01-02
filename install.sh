@@ -158,8 +158,8 @@ pre_install_docker_compose(){
     echo
 
     # Set Setting if the node go downwith panel
-    echo "请问你前端面板是什么程序"
-    read -p "(回车默认SSPANEL面板：1):" v2ray_downWithPanel
+    echo "Set Setting if the node go downwith panel"
+    read -p "(回车默认1):" v2ray_downWithPanel
     [ -z "${v2ray_downWithPanel}" ] && v2ray_downWithPanel=1
     echo
     echo "---------------------------"
@@ -501,7 +501,7 @@ case "${selected}" in
     break
     ;;
     *)
-    echo -e "[${red}Error${plain}] 你妈逼啊,请输入正确数字 [1-4]"
+    echo -e "[${red}Error${plain}] 请输入正确数字 [1-4]"
     ;;
 esac
 done
